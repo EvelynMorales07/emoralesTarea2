@@ -9,10 +9,9 @@ public partial class vRegistro : ContentPage
 
     private void btnGuardar_Clicked(object sender, EventArgs e)
     {
-        string usuario = txtUsuario.Text;
-        string contrasena = txtContrasena.Text;
+        
         DisplayAlert("ALERTA", "USUARIO GUARDADO", "OK");
-        Navigation.PushAsync(new vLogin(usuario, contrasena));
+        Navigation.PushAsync(new vLogin());
     }
 
     private void btnCancelar_Clicked(object sender, EventArgs e)
